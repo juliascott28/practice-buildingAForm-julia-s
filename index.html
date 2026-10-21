@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Form for a Website</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <h2>Feedback Form</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Please Enter Your Name">
+        <br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="user@example.com" required>
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Please Enter Your Password">
+        <br>
+        <label for="feedback">Feedback:</label>
+        <select id="feedback" name="feedback">
+            <option value="good">Good</option>
+            <option value="avg">Average</option>
+            <option value="bad">Bad</option>
+        </select>
+        <br>
+        <fieldset>
+            <legend>Preferred Contact Method</legend>
+            <label for="email">
+                <input type="radio" id="email" name="contact" value="email">
+                Email
+            </label>
+            <label for="phone">
+                <input type="radio" id="phone" name="contact" value="phone">
+                Phone
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>How likely are you to recommend us to a friend?</legend>
+                <label for="very">
+                    <input type="checkbox" id="very" name="response" value="very">
+                    Very Likely
+                </label>
+                <label for="somewhat">
+                    <input type="checkbox" id="somewhat" name="response" value="somewhat">
+                    Somewhat Likely
+                </label>
+                <label for="not">
+                    <input type="checkbox" id="not" name="response" value="not">
+                    Not Likely
+                </label>
+        </fieldset>
+        <label for="message">Comments:</label>
+        <br>
+        <textarea id="message" name="message" rows="5" cols="30"
+        placeholder="Write your message here..."></textarea>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
